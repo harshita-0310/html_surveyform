@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Digital Horizon Survey</title>
+</head>
+<body>
+
+    <!-- 1, 2. h1 with id="title" -->
+    <h1 id="title">The Digital Horizon</h1>
+    <h2>A Survey on Future Tech Adoption</h2>
+    
+    <!-- 3, 4. p with id="description" -->
+    <p id="description">
+        Thank you for participating in our forward-looking technology survey!
+        We are exploring how quickly users plan to embrace the next generation of digital products, from personal AI assistants and augmented reality glasses to fully autonomous vehicles and smart-home ecosystems. Your anonymous feedback will help us chart the course of consumer tech trends for the next decade.
+    </p>
+
+    <!-- 5. Form Element with id="survey-form" -->
+    <form id="survey-form" method="post" action="#">
+        
+        <fieldset>
+            <legend>1. Personal Information</legend>
+            
+            <!-- Name Input Group -->
+            <div class="form-group">
+                <!-- 19, 22, 25. label with id="name-label" -->
+                <label id="name-label" for="name">Full Name</label><br>
+                <!-- 6, 7, 8, 28. input with id="name", type="text", required, placeholder -->
+                <input type="text" id="name" name="name" placeholder="Enter your full name" required><br>
+            </div>
+
+            <!-- Email Input Group -->
+            <div class="form-group">
+                <!-- 20, 23, 26. label with id="email-label" -->
+                <label id="email-label" for="email">Email Address</label><br>
+                <!-- 10, 11, 12, 29. input with id="email", type="email", required, placeholder -->
+                <input type="email" id="email" name="email" placeholder="e.g., user@example.com" required><br>
+            </div>
+
+            <!-- Number Input Group -->
+            <div class="form-group">
+                <!-- 21, 24, 27. label with id="number-label" -->
+                <label id="number-label" for="number">Age</label><br>
+                <!-- 14, 15, 16, 17, 18, 30. input with id="number", type="number", required, min, max, placeholder -->
+                <input type="number" id="number" name="age" min="1" max="120" placeholder="Enter your age" required><br>
+            </div>
+        </fieldset>
+
+        <fieldset>
+            <legend>2. Core Tech Adoption</legend>
+            
+            <!-- Dropdown (31, 32, 33) -->
+            <div class="form-group">
+                <label for="dropdown">Which existing technology are you most reliant on?</label><br>
+                <select id="dropdown" name="reliance">
+                    <option value="" disabled selected>Select an option</option>
+                    <!-- Two selectable options -->
+                    <option value="smartphone">High-End Smartphone</option>
+                    <option value="laptop">Laptop/PC</option>
+                    <option value="iot">Smart Home Devices (IoT)</option>
+                </select><br>
+            </div>
+
+            <!-- Radio Buttons (34, 35, 36, 37, 38) -->
+            <div class="form-group">
+                <p>How likely are you to purchase a **Personal AI Assistant** (e.g., custom home bot) in the next 3 years?</p>
+                
+                <!-- Radio Option 1 -->
+                <input type="radio" id="radio-v-likely" name="ai-likelihood" value="very-likely" required>
+                <label for="radio-v-likely">Very Likely</label><br>
+                
+                <!-- Radio Option 2 -->
+                <input type="radio" id="radio-likely" name="ai-likelihood" value="likely" required>
+                <label for="radio-likely">Likely</label><br>
+                
+                <!-- Radio Option 3 (More than 2 for good measure) -->
+                <input type="radio" id="radio-unlikely" name="ai-likelihood" value="unlikely" required>
+                <label for="radio-unlikely">Unlikely</label><br>
+            </div>
+        </fieldset>
+        
+        <fieldset>
+            <legend>3. Future Readiness</legend>
+
+            <!-- Checkboxes (39, 40) -->
+            <div class="form-group">
+                <p>Which future technologies are you most excited about? (Select all that apply)</p>
+                
+                <!-- Checkbox Option 1 -->
+                <input type="checkbox" id="check-ar" name="excitement" value="augmented-reality">
+                <label for="check-ar">Augmented Reality (AR) Glasses</label><br>
+                
+                <!-- Checkbox Option 2 -->
+                <input type="checkbox" id="check-auto" name="excitement" value="autonomous-vehicles">
+                <label for="check-auto">Fully Autonomous Vehicles</label><br>
+                
+                <!-- Checkbox Option 3 (More than 2 for good measure) -->
+                <input type="checkbox" id="check-haptic" name="excitement" value="haptic-feedback">
+                <label for="check-haptic">Advanced Haptic Feedback Devices</label><br>
+            </div>
+        </fieldset>
+
+        <!-- Textarea (41) -->
+        <fieldset>
+            <legend>4. Open Feedback</legend>
+            <div class="form-group">
+                <label for="textarea">What is the single biggest ethical concern you have regarding future technology?</label><br>
+                <textarea id="textarea" name="concerns" rows="4" cols="50" placeholder="Share your thoughts here..."></textarea><br>
+            </div>
+        </fieldset>
+
+        <!-- Submit Button (42, 43, 44) -->
+        <button type="submit" id="submit">
+            Submit Survey
+        </button>
+        
+    </form>
+
+</body>
+</html>
